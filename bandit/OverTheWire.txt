@@ -1,0 +1,69 @@
+bandit@bandit.labs.overthewire.org -p 2220
+pass: bandit0
+
+ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If 1
+
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx 2
+
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx 3
+
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ 4
+
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw 5 (-file07)
+
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG 6 (./maybehere07/.file2)
+
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj 7 (/var/lib/dpkg/info/bandit7.password)
+
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc 8 (grep "millionth" data.txt)
+
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM 9 (sort data.txt | uniq -u)
+
+FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey 10 (strings data.txt)
+
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr 11 (base64 -d data.txt)
+
+7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4 12 (cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m')
+
+FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn 13 (ribet ajg)
+
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS 14 (via sshkey)
+
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo 15 (submit oldPwd ke port 30000)
+
+kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx 16 (openssl s_client -connect localhost:30001)
+
+(Bandit17 menggunakan private.sshkey sebagai metode login, file terpisah)
+
+ktfgBvpMzWKR5ENj26IbLGSblgUG9CzB 17
+
+x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO 18 
+
+cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8 19 (ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/sh)
+
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO 20 (./bandit20-do cat /etc/bandit_pass/bandit20)
+
+EeoULMCra2q0dSkYj561DX7s1CpBuOBt 21 (nc -lvnp <port>)(./suconnect <port>)
+
+tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q 22 (cat /usr/bin/cronjob_bandit22.sh)(cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv)
+
+0Zf11ioIjMVN551jX3CmStKLYqjk54Ga 23 (echo "I am user bandit23" | md5sum | cut -d ' ' -f 1)
+
+gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 24 (ribet mmek, terimakasih GPT)
+
+iCi86ttT4KSNe1armKiwbQNmB3YJP3q4 25 (pake skrip, terpisah ygy)
+
+s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ 26 (:e /etc/bandit_pass/bandit26)
+
+upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB 27 (:set shell=/bin/bash lalu :shell)
+
+Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN 28 (git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo)
+
+4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7 29 (git show 817e303aa6c2b207ea043c7bba1bb7575dc4ea73<branch>)
+
+qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL 30 (git show <bandit30-passwd.txt>)
+
+fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy 31 (saat di repo, lalu $cd .git dan gacha filenya)
+
+3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K 32 (uploadFile:key.txt)
+

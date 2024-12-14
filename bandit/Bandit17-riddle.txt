@@ -1,0 +1,8 @@
+openssl s_client -connect localhost:<port-number> -quiet -msg
+
+31046/tcp open  0
+31518/tcp open  keyupdate
+31691/tcp open  0
+31790/tcp open  keyupdate PING
+31960/tcp open  0
+
