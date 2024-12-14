@@ -35,7 +35,7 @@ kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx 16 (openssl s_client -connect localhost:30001)
 
 (Bandit17 menggunakan private.sshkey sebagai metode login, file terpisah)
 
-ktfgBvpMzWKR5ENj26IbLGSblgUG9CzB 17
+EReVavePLFHtFlFsjn3hyzMlvSuSAcRD 17
 
 x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO 18 
 
