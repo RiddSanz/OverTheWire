@@ -67,3 +67,5 @@ fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy 31 (saat di repo, lalu $cd .git dan gacha filen
 
 3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K 32 (uploadFile:key.txt)
 
+tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0 33 ($0 untuk menampilkan terminal pada shell)
+
