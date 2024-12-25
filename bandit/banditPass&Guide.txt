@@ -1,13 +1,13 @@
 bandit@bandit.labs.overthewire.org -p 2220
 pass: bandit0
 
-ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If 1
+ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If 1 (cat readme)
 
-263JGJPfgU6LtdEvgfWU1XP5yac29mFx 2
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx 2 (cat ./-) 
 
-MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx 3
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx 3 (cat 'spaces in this filename')
 
-2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ 4
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ 4 (cd inhere, cat ...Hiding-From-You)
 
 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw 5 (-file07)
 
