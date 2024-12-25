@@ -1,6 +1,6 @@
 # OverTheWire
-i will save all of my progress at overthewire.org here
-how to login to the level i had completed is:
+project achive of overthewire.org, Level: Bandit
+here is how to login to the bandit :
 
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 
