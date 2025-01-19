@@ -1,8 +1,12 @@
 # OverTheWire
-project achive of overthewire.org, Level: Bandit.
+overthewire - walkthrough by myself, hope its helpful for yall !
 
-here is how to login to the bandit :
+creds for bandit :
 
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 
-the -p is stand for port: 2220
+creds for leviathan:
+
+ssh leviathan0@leviathan.labs.overthewire.org -p 2223
+
+the -p is stand for port
