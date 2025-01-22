@@ -9,4 +9,8 @@ creds for leviathan:
 
 ssh leviathan0@leviathan.labs.overthewire.org -p 2223
 
-the -p is stand for port
+creds for krypton:
+
+ssh krypton0@krypton.labs.overthewire.org -p 2231
+
+*THE -P IS STAND FOR PORT*
