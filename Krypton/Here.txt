@@ -1,0 +1,32 @@
+ssh krypton0@krypton.labs.overthewire.org -p 2231
+
+Krypton 0: No ssh needed
+at this level we given an encrypted strings, and we have to decrypt it with Base64
+
+Krypton 1: KRYPTONISGREAT
+Encrypted with ROT13: YRIRY GJB CNFFJBEQ EBGGRA
+(decrypted via web, hehe)
+
+Krypton 2: ROTTEN
+Encrypted with CaesarCipher: OMQEMDUEQMEK
+( cat krypton3 | tr 'A-Za-z' 'O-ZA-No-za-n' )
+
+Krypton 3: CAESARISEASY
+( for i in {A..Z}; do printf $i; cat found1 found2 found3 | tr -cd $i | wc -c; done )
+( for i in {A..Z}; do cat found1 found2 found3 | tr -cd $i | wc -c | tr -d '\n'; printf " $i \n"; done | sort -nr )
+( cat krypton4 | tr 'SQJUBNGCDZVWMYTXKELAFIORHP' 'ETAOINSRHDLUCMFYWGPBVKXQJZ' )
+This is the encrypted passwd before: WELLU ISEAH ELEKE LYICN MTOOW INURO BNCAE
+( cat krypton4 | tr 'SQJUBNGCDZVWMYTXKELAFIORHP' 'EATSORNIHCLDUPYFWGMBKVXQJZ' )
+
+Krypton 4: BRUTE
+Encrypted with Vigen re Cipher: HCIKV RJOX
+KeyLength: 6
+( https://github.com/m-rosinsky/Krypton_Scripts )
+
+Krypton 5: CLEARTEXT
+KeyLength: ?
+KnownKeyLength: 9
+
+Krypton 6: RANDOM
+
+Krypton 7: LFSRISNOTRANDOM
