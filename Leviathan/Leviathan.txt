@@ -15,7 +15,10 @@ then ( $ whoami ) to make sure you were granted the access to leviathan2,
 then ( $ cat /etc/leviathan_pass/leviathan2 )to see the password to the next level.
 
 Leviathan 3: f0n8h2iWLP
-(same method from leviathan2)
+at first, we have to $ mktemp -d cause we can't add any file to the root directory.
+then, make a file that's have space on it to trick the system to give us access to the forbidden directory that only some-user accessible
+put the file at ur tmp dir by doing $ cd /tmp/[ur tmpDir] then nano "test file.txt"
+( ltrace ./printFile [filename] )
 
 Leviathan 4: WG1egElCvO
 ( echo 0011000001100100011110010111100001010100001101110100011000110100010100010100010000001010 | perl -lpe '$_=pack"B*",$_' )
