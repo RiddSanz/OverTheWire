@@ -1,0 +1,21 @@
+guidance for natas11
+
+cookie(BaseForm) - HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=
+
+plaintext - {"showpassword":"yes","bgcolor":"#ffffff"}
+(at first, the parameters is no, we gotta change it onto)
+
+cipertext - f$ 
+3'7 
+
+key - eDWo
+
+result - HmYkBwozJw4WNyAAFyB1VUc9MhxHaHUNAic4Awo2dVVHZzEJAyIxCUc5
+
+NOTE:
+The formula is we gotta copy the cookies via pressing F12 > application > data
+Then knowing the encryption that was used to encrypt the string.
+Basically, its encrypted from base64 then used XOR. 
+By XOR-ing the string, we know thats just 4letter thats being used repeatedly
+By that conclusion, we put the 4 digit key as XOR formula, and the plaintext as subject.
+After all of that done, encrypt that back to base64 then replace the previous cookie.
