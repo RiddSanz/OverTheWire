@@ -37,7 +37,7 @@ kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx 16 (openssl s_client -connect localhost:30001)
 
 EReVavePLFHtFlFsjn3hyzMlvSuSAcRD 17 ($ diff passwords.old passwords.new)
 
-x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO 18 
+x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO 18 (ssh -t /bin/sh)
 
 cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8 19 (ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/sh)
 
