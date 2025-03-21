@@ -113,3 +113,6 @@ after that, take a look at HTTP history, and the request you edited and see the 
 if you see a random string apeeared there, thats ur password for the next level
 
 natas26: cVXXwxMS3Y26n5UZU89QgpGmWCelaQlE
+used script i provided, just run it
+
+natas27: u3RRffXjysjgwFU6b9xa23i6prmUsYne
